@@ -2,18 +2,18 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8"/>
-    <title>Contact Me</title>
+    <title>Contact Page</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 <body>
 
 <!-- Beginning of first block. -->
-<section class="header">
+<div class="header">
     <section class="full">
 
         <div class="left">
-            <h1>Maeli Hector</h1>
+            <h2>Maeli Hector</h2>
         </div>
                 
         <nav>
@@ -30,28 +30,38 @@
             </div>  
         </nav>            
     </section> 
-</section>
+</div>
 <!-- End of first block (header) and beginning of middle block-->
-<section class="middle">
+<div class="middle">
     <div class="full">
         <article class="article">
         
-            <div class="name">
-                <h1>Contact Me</h1>
+            <div class="title">
+                <h2>Contact Me</h2>
             </div>
-        
-            <div class="content">
-               
-                <!-- Form goes here -->
-               
-            </div>
+            <div>
+                    <form action="#" target="_top">
+                        Name<br>
+                        <input type="text" name="user_name" value="John Smith">
+                        <br>
+                        Email<br>
+                        <input type="text" name="user_email" value="example@gmail.com">
+                        Message<br>
+                        <textarea name="message" rows="10" cols="30"></textarea>
+                        <br>                
+                        <div class="button">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+
+            </div>   
 
         </article>        
-
-        <figure>
+        <!-- Begining of Connect with Me (still inside middle). -->
+        <aside>
         
             <div class="connect">
-                <h1>Connect with Me</h1>
+                <h3>Connect with Me</h3>
             </div>   
 
             <div class="box-set">
@@ -60,10 +70,10 @@
             <a  href ="https://stackoverflow.com/users/9155426/maeli-hector/" target="_blank"><img class="box box-3" src="assets/images/stackoverflow.png" alt="stackoverflow logo"></a>
             </div>
 
-        </figure>
+        </aside>
     </div>    
-</section> 
-
+</div> 
+<!-- End of middle block -->
 <footer>
     Copyright &copy; 2018 Maeli Hector
 </footer>
