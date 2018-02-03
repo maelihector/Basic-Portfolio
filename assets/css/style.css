@@ -18,6 +18,12 @@ body {
     
 }
 
+.full {
+    overflow: auto;
+    width: 960px;
+    margin: 0 auto;
+}
+
 .left {
     background: #4aaaa5;
     float: left;
@@ -28,6 +34,12 @@ body {
     font-weight: bold;
 }
 
+nav {
+    float: right;
+    margin-top: 35px;
+    color: #777777d1;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .right {
     float: left;
     padding: 0px 10px 0px 10px;
@@ -37,18 +49,35 @@ body {
     border-left: 1px solid #ccccccba;
 }
   
-.full {
-    overflow: auto;
-    width: 960px;
-    margin: 0 auto;
+/* This adds pseudo classes to the .header links */
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color .5s;
 }
 
-nav {
-    float: right;
-    margin-top: 35px;
-    color: #777777d1;
-    font-family: Arial, Helvetica, sans-serif;
+a:link {
+    color: #ffffff;
 }
+
+a:visited {
+    color: #106460;
+}
+
+a:hover {
+    color: #8aece7;
+}
+
+a:active {
+    color: #C14A4A;
+}
+
+a:focus {
+    color: #46f1eb;
+}
+
+
 
 /* End of header */
 
